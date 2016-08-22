@@ -1,0 +1,35 @@
+<ion-view style="background:#FFFFFF">
+  <ion-header-bar class="bar bar-header bar-positive" style="background: #C80009;border:none;">
+    <div class="buttons buttons-left header-item">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </div>
+    <div class="title">侧滑主页</div>
+  </ion-header-bar>
+
+  <ion-content class="main">
+    <ion-slide-box class="menu-list" menu-close does-continue="true">
+      <ion-slide>
+        <div class="main-screen1">
+          <img src="build/img/main/photo1.png" width="100%"/>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="main-screen2">
+          <img src="build/img/main/photo2.png" width="100%"/>
+        </div>
+      </ion-slide>
+
+      <ion-slide on-slide-changed="slideHasChanged(index)">
+        <div class="main-screen3">
+          <img src="build/img/main/photo3.png" width="100%"/>
+        </div>
+      </ion-slide>
+      <ion-slide on-slide-changed="slideHasChanged(index)">
+        <div class="main-screen3">
+          <img src="build/img/main/photo4.png" width="100%"/>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>

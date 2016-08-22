@@ -1,0 +1,56 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content drag-content="true">
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" width="myWidthValue + 180">
+    <ion-content class="side-menu">
+      <div class="main">
+        <img src="build/img/main/setting.png" width="50" height="50"/>
+      </div>
+      <div class="setting">系统设置</div>
+
+      <ul>
+        <li menu-close class="button-list" ng-click="versionUpgrade()">
+          <div class="menu-icon">
+            <img src="build/img/main/versionUpgrade.png" width="20" height="20"/>
+          </div>
+          <div class="menu-item"><a>版本升级</a></div>
+          <div>
+            <i class="icon ion-chevron-right chevron"></i>
+          </div>
+          <div class="platBand"></div>
+        </li>
+        <li menu-close class="button-list" ng-click="inspectDevice()">
+          <div class="menu-icon">
+            <img src="build/img/main/inspectDevice.png" width="20" height="20"/>
+          </div>
+          <div class="menu-item"><a>关于设备</a></div>
+          <div>
+            <i class="icon ion-chevron-right chevron"></i>
+          </div>
+          <div class="platBand"></div>
+        </li>
+        <li menu-close class="button-list" ng-click="changePassword()">
+          <div class="menu-icon">
+            <img src="build/img/main/changePassword.png" width="20" height="20"/>
+          </div>
+          <div class="menu-item"><a>修改密码</a></div>
+          <div><i class="icon ion-chevron-right chevron"></i>
+          </div>
+          <div class="platBand"></div>
+        </li>
+        <li menu-close class="button-list" ng-click="logOut()">
+          <div class="menu-icon">
+            <img src="build/img/main/logOut.png" width="20" height="20"/>
+          </div>
+          <div class="menu-item"><a>注销登录</a></div>
+          <div><i class="icon ion-chevron-right chevron"></i>
+          </div>
+        </li>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>
